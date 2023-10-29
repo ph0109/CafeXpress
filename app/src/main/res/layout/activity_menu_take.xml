@@ -437,7 +437,7 @@
                     android:id="@+id/hibi_img"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/latte"
+                    android:background="@drawable/hibi"
                     android:padding="16dp" />
 
                 <TextView
