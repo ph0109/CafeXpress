@@ -4,476 +4,488 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu_take_Activity">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="15dp">
+        android:background="#7C7B7B">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginBottom="15dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <LinearLayout
-                android:id="@+id/americano"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/americano_img"
-                    android:background="@drawable/americano"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:padding="16dp" />
-
-                <TextView
-                    android:id="@+id/americano_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="아메리카노"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="15dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
+                    android:id="@+id/americano"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/americano_img"
+                        android:background="@drawable/americano"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="16dp" />
 
                     <TextView
-                        android:id="@+id/americano_price"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/americano_text"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="1500"
-                        android:textSize="14dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="아메리카노"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/americano_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1500"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/latte"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/latte_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/latte"
+                        android:padding="16dp" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/latte_text"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="카페라떼"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/latte_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vanillalatte"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/vanillalatte_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/vanilla" />
+
+                    <TextView
+                        android:id="@+id/vanillalatte_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="바닐라라떼"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/vanillalatte_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3500"
+                            android:textSize="14dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/latte"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/latte_img"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/latte"
-                    android:padding="16dp" />
-
-                <TextView
-                    android:id="@+id/latte_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="카페라떼"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="15dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
+                    android:id="@+id/lemonade"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/lemon_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/lemon"
+                        android:padding="16dp" />
 
                     <TextView
-                        android:id="@+id/latte_price"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/lemon_text"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3000"
-                        android:textSize="14dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="레몬에이드"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/lemonade_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3500"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/peachtea"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/peachtea_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/peachtea"
+                        android:padding="16dp" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/peachtea_text"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="복숭아아이스티"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/peachtea_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/strawberrylatte"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/strawberrylatte_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/strawberry"
+                        android:padding="16dp" />
+
+                    <TextView
+                        android:id="@+id/strawberrylatte_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="딸기라떼"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/strawberrylatte_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3800"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
-                android:id="@+id/vanillalatte"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/vanillalatte_img"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/vanilla" />
-
-                <TextView
-                    android:id="@+id/vanillalatte_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="바닐라라떼"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
+                    android:id="@+id/chocolatte"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/chocolatte_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/choco"
+                        android:padding="16dp" />
 
                     <TextView
-                        android:id="@+id/vanillalatte_price"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/chocolatte_text"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3500"
-                        android:textSize="14dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="초코라떼"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/chocolatte_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3800"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/milkshake"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/milkshake_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/milk"
+                        android:padding="16dp" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/milkshake_text"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="밀크쉐이크"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/milkshake_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4500"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hibiscus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_round_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/hibi_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/hibi"
+                        android:padding="16dp" />
+
+                    <TextView
+                        android:id="@+id/hibiscus_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="히비스커스티"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/hibiscus_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3500"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textSize="14dp" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginBottom="15dp">
-
-            <LinearLayout
-                android:id="@+id/lemonade"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/lemon_img"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/lemon"
-                    android:padding="16dp" />
-
-                <TextView
-                    android:id="@+id/lemon_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="레몬에이드"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/lemonade_price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3500"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/peachtea"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/peachtea_img"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/peachtea"
-                    android:padding="16dp" />
-
-                <TextView
-                    android:id="@+id/peachtea_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="복숭아아이스티"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/peachtea_price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3000"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/strawberrylatte"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/strawberrylatte_img"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/strawberry"
-                    android:padding="16dp" />
-
-                <TextView
-                    android:id="@+id/strawberrylatte_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="딸기라떼"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/strawberrylatte_price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3800"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp">
-
-            <LinearLayout
-                android:id="@+id/chocolatte"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/chocolatte_img"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/choco"
-                    android:padding="16dp" />
-
-                <TextView
-                    android:id="@+id/chocolatte_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="초코라떼"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/chocolatte_price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3800"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/milkshake"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/milkshake_img"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/milk"
-                    android:padding="16dp" />
-
-                <TextView
-                    android:id="@+id/milkshake_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="밀크쉐이크"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/milkshake_price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4500"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/hibiscus"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/hibi_img"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/hibi"
-                    android:padding="16dp" />
-
-                <TextView
-                    android:id="@+id/hibiscus_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="히비스커스티"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/hibiscus_price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3500"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textSize="14dp" />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 </FrameLayout>
-
-
 
