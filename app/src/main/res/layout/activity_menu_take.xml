@@ -5,66 +5,118 @@
     android:layout_height="match_parent"
     tools:context=".Menu_take_Activity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="15dp">
+            android:layout_height="130dp"
+            android:layout_marginBottom="15dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginBottom="15dp">
+                android:id="@+id/americano"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:background="@drawable/americano"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/americano_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="아메리카노"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
-                    android:id="@+id/americano"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:drawableLeft="@drawable/coffee"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:padding="16dp" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
 
                     <TextView
-                        android:id="@+id/americano_text"
-                        android:layout_width="match_parent"
+                        android:id="@+id/americano_price"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:text="아메리카노"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="11dp"
-                        android:textStyle="bold" />
+                        android:text="1500"
+                        android:textSize="14dp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center">
+                        android:text="원"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/americano_price"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="1500"
-                            android:textSize="14dp" />
+            <LinearLayout
+                android:id="@+id/latte"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="원"
-                            android:textSize="14dp" />
-                    </LinearLayout>
+                <ImageView
+                    android:id="@+id/latte_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/latte"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/latte_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="카페라떼"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/latte_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="원"
+                        android:textSize="14dp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+    </LinearLayout>
 </FrameLayout>
+
 
 
