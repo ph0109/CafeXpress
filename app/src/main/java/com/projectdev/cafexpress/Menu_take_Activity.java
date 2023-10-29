@@ -3,6 +3,7 @@ package com.projectdev.cafexpress;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,7 +11,7 @@ import android.widget.LinearLayout;
 
 public class Menu_take_Activity extends AppCompatActivity {
     LinearLayout americano,latte,vanillalatte,lemonade,peachtea,strawberrylatte,chocolatte,milkshake,hibiscus;
-
+    String img = new String();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,7 @@ public class Menu_take_Activity extends AppCompatActivity {
                 Intent intent = new Intent(Menu_take_Activity.this, OptionActivity.class);
                 startActivity(intent);
             }
+
         });
         latte.setOnClickListener(new View.OnClickListener() {
             @Override
