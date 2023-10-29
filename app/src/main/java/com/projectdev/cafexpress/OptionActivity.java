@@ -36,5 +36,11 @@ public class OptionActivity extends AppCompatActivity {
             }
            
         });
+        optionCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }
