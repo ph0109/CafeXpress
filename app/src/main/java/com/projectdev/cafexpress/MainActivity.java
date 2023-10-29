@@ -23,7 +23,14 @@ public class MainActivity extends AppCompatActivity {
         button_takeaway.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(MainActivity.this, Menu_take_Activity.class);
+                startActivity(intent);
+            }
+        });
+        button_visit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Menu_visit_Activity.class);
                 startActivity(intent);
             }
         });
