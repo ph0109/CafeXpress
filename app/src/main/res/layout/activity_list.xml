@@ -61,7 +61,7 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/lyj_cnt"
+                            android:id="@+id/cnt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1"
@@ -115,9 +115,8 @@
 
 
         </LinearLayout>
-        <!--                        옵션 추가시 추가될 목록-->
         <LinearLayout
-            android:id="@+id/lyj_optionPlusMenu"
+            android:id="@+id/optionPlusMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -137,7 +136,7 @@
                     android:src="@drawable/option_select_plus_black" />
 
                 <TextView
-                    android:id="@+id/lyj_optionPlusShot"
+                    android:id="@+id/optionPlusShot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
@@ -180,7 +179,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/lyj_optionHotIceMenu"
+            android:id="@+id/optionHotIceMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -199,7 +198,7 @@
                     android:src="@drawable/option_select_plus_black" />
 
                 <TextView
-                    android:id="@+id/lyj_optionHotIce"
+                    android:id="@+id/optionHotIce"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
@@ -221,7 +220,7 @@
                         android:textSize="12dp" />
 
                     <TextView
-                        android:id="@+id/lyj_optionHotIcePrice"
+                        android:id="@+id/optionHotIcePrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
